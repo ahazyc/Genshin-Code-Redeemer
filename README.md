@@ -17,4 +17,37 @@ This is an automated script designed to scrape redeem codes for Genshin Impact f
 You can install the required libraries using:
 ```bash
 pip install requests beautifulsoup4
+```
+
+## How to Use
+
+### 1. Set Up Credentials
+
+Create a `credentials.json` file in the same directory as the script. The file should follow this structure:
+
+```json
+{
+    "username1": {
+        "account": "your_account",
+        "password": "your_password",
+        "uid": "your_uid"
+    },
+    "username2": {
+        "account": "another_account",
+        "password": "another_password",
+        "uid": "another_uid"
+    }
+}
+```
+### 2. Configure the Script:
+
+Open the script and adjust the `TARGET_USER` variable to the username you want to use for redeeming codes.
+For example: TARGET_USER = "your_username"
+
+### 3. Run the Script:
+
+Open your terminal, navigate to the directory where the script is located, and execute:
+```bash
+python main.py
+```
 
