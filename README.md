@@ -105,3 +105,7 @@ PT5WP6D5GXJ9
 ```
 ## Have Fun !!
 
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
