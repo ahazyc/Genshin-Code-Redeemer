@@ -32,8 +32,12 @@ def scrape_codes_from_first_ul(url):
 
             if first_ul:
                 codes = []
-                # Extract codes from the <strong> tags within <li> elements
+                # Extract codes from the <strong> <b> tags within <li> elements
                 for li in first_ul.find_all('li'):
+                    b_tag = li.find('b')
+                    if b_tag:
+                        codes.append(b_tag.get_text(strip=True))
+
                     strong_tag = li.find('strong')
                     if strong_tag:
                         codes.append(strong_tag.get_text(strip=True))
